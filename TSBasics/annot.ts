@@ -17,11 +17,11 @@ if( !title) {
 //Null is explicitly and intentionally assigned and is simply just not filled in YET
 //Used in cases when you know a value may sometimes be absent.
 
-let newTitle: string = null;
+let upper: string = null;
 
-console.log('newTitle = ' + newTitle)
+console.log('upper = ' + upper)
 
-if( !newTitle) {
+if( !upper) {
     console.log("The value of title is not know yet.")
 }
 

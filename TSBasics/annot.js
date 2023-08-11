@@ -10,9 +10,9 @@ if (!title) {
 //TOPIC: Learning null in Type Annotation================================================
 //Null is explicitly and intentionally assigned and is simply just not filled in YET
 //Used in cases when you know a value may sometimes be absent.
-var newTitle = null;
-console.log('newTitle = ' + newTitle);
-if (!newTitle) {
+var upper = null;
+console.log('upper = ' + upper);
+if (!upper) {
     console.log("The value of title is not know yet.");
 }
 //NOTES FOR UNDEFINED AND null===========================================================
