@@ -105,87 +105,134 @@
 
 //REDO Q1==========================================
 
-function evenOdd(num: number) {
-    if(num % 2 === 0) {
-        console.log(`${num} is even`)
-    } else {
-        console.log(`${num} is odd`)
-    }
-}
-
-evenOdd(52)
-
-//REDO Q2==========================================
-
-// function fizzBuzz(num: number) {
-//     for(let i = 1; i <= num; i++) {
-//         if(i % 3 === 0 && i % 5 === 0) {
-//             console.log('FizzBuzz')
-//         }else if(i % 3 === 0 && i % 5 !== 0) {
-//             console.log('Fizz')
-//         }else if(i % 5 === 0 && i % 3 !== 0) {
-//             console.log('Buzz')
-//         } else {
-//             console.log(i)
-//         }
+// function evenOdd(num: number) {
+//     if(num % 2 === 0) {
+//         console.log(`${num} is even`)
+//     } else {
+//         console.log(`${num} is odd`)
 //     }
 // }
 
-// fizzBuzz(100)
+// evenOdd(52)
 
-//REDO Q3 Leap Year=====================================
+// //REDO Q2==========================================
 
-function leapY(year: number): boolean {
-    if(year % 4 === 0 && year % 100 !== 0) {
-        return true
-    } else if(year % 400 === 0) {
-        return true
+// // function fizzBuzz(num: number) {
+// //     for(let i = 1; i <= num; i++) {
+// //         if(i % 3 === 0 && i % 5 === 0) {
+// //             console.log('FizzBuzz')
+// //         }else if(i % 3 === 0 && i % 5 !== 0) {
+// //             console.log('Fizz')
+// //         }else if(i % 5 === 0 && i % 3 !== 0) {
+// //             console.log('Buzz')
+// //         } else {
+// //             console.log(i)
+// //         }
+// //     }
+// // }
+
+// // fizzBuzz(100)
+
+// //REDO Q3 Leap Year=====================================
+
+// function leapY(year: number): boolean {
+//     if(year % 4 === 0 && year % 100 !== 0) {
+//         return true
+//     } else if(year % 400 === 0) {
+//         return true
+//     } else {
+//         return false
+//     }
+// }
+
+// console.log(leapY(2000))
+
+// //REDO Q4==============================================
+
+// function Prime(num: number): boolean {
+//     if(num <= 1) {
+//         return false
+//     } 
+//     for(let i = 2; i <= Math.sqrt(num); i++) {
+//         if(num % i === 0) {
+//             return false
+//         } 
+//     }
+//     return true
+// }
+
+// console.log(Prime(1))
+
+// //REDO Q5===============================================
+
+// function factorial(num: number): number {
+//     let result = 1
+//     for(let i = 1; i <= num; i++) {
+//         result = result * i
+//     } return result
+// }
+
+// console.log(factorial(5))
+
+// //REDO Q6=============================================
+
+// function countDig(num: number): number {
+//     let count = 0
+//     if(num <= 0) {
+//         return 1
+//     }
+//     while(num !== 0) {
+//         count++
+//         num = Math.floor(num / 10)
+//     }
+//     return count
+// }
+
+// console.log(countDig(12242))
+
+//Even odd===========================================
+
+function evenOdd(num: number) {
+    if(num % 2 === 0) {
+        console.log('number is even')
     } else {
-        return false
+        console.log('number is odd')
     }
 }
 
-console.log(leapY(2000))
+evenOdd(7)
 
-//REDO Q4==============================================
+//FizzBuzz======================================
 
-function Prime(num: number): boolean {
-    if(num <= 1) {
-        return false
-    } 
-    for(let i = 2; i <= Math.sqrt(num); i++) {
-        if(num % i === 0) {
+function fizzBuzz(num: number) {
+    for(let i = 1;i <= num; i++) {
+        if(i % 3 === 0 && i % 5 === 0) {
+            console.log('FizzBuzz')
+        }else if(i % 3 === 0) {
+            console.log('Fizz')
+        }else if(i % 5 === 0) {
+            console.log('Buzz')
+        } else {
+            console.log(i)
+        }
+    }
+}
+
+fizzBuzz(100)
+
+//LeapYear======================================
+
+function leapY(year: number) {
+    for(let i = 1;i <= year; i++) {
+        if(year % 4 === 0 && year % 100 !== 0) {
+            return true
+        } else if(year % 400 === 0) {
+            return true
+        } else {
             return false
-        } 
+        }
     }
-    return true
-}
+} 
 
-console.log(Prime(1))
+console.log(leapY(1900))
 
-//REDO Q5===============================================
-
-function factorial(num: number): number {
-    let result = 1
-    for(let i = 1; i <= num; i++) {
-        result = result * i
-    } return result
-}
-
-console.log(factorial(5))
-
-//REDO Q6=============================================
-
-function countDig(num: number): number {
-    let count = 0
-    if(num <= 0) {
-        return 1
-    }
-    while(num !== 0) {
-        count++
-        num = Math.floor(num / 10)
-    }
-    return count
-}
-
-console.log(countDig(12242))
